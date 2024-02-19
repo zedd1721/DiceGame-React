@@ -2,7 +2,6 @@ import React from "react";
 import Scoreboard from "./Scoreboard";
 import RollDice from "./RollDice";
 import { useState } from "react";
-import Rules from "./Rules";
 
 function GamePlay() {
   const [selectedNumber, setSelectedNumber] = useState();

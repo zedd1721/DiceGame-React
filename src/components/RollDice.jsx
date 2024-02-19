@@ -19,7 +19,7 @@ function RollDice({ currentDice, randomNumber, setScore }) {
       <div className="wrapper">
         <img
           onClick={() => randomNumber(1, 7)}
-          src={`/src/assets/dice_${currentDice}.png`}
+          src={`./dice_${currentDice}.png`}
           alt="dice"
         />
         <p>Click on Dice to roll</p>

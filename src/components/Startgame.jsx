@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-function Startgame({toggle}) {
+function Startgame({ toggle }) {
   return (
     <Container>
-      <img src="/src/assets/dices.png" alt="dice" />
+      <img src="./dices.png" alt="dice" />
       <Title>
         <H1>DICE GAME</H1>
         <Button onClick={toggle}>Play Now</Button>
