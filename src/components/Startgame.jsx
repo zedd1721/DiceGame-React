@@ -26,7 +26,12 @@ const Container = styled.div`
   img {
     height: 450px;
   }
-
+  @media (max-width: 800px) {
+    gap: 0;
+    img {
+      height: 270px;
+    }
+  }
   @media (max-width: 450px) {
     flex-direction: column;
     img {
@@ -46,6 +51,10 @@ const Title = styled.div`
 const H1 = styled.h1`
   font-weight: 700;
   font-size: 96px;
+  @media (max-width: 800px) {
+    font-size: 65px;
+    white-space: nowrap;
+  }
   @media (max-width: 450px) {
     font-size: 55px;
   }
@@ -69,7 +78,7 @@ const Button = styled.button`
   }
 
   @media (max-width: 450px) {
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 12px;
   }
 `;

@@ -47,6 +47,19 @@ const NumberContainer = styled.div`
   p {
     color: red;
   }
+  @media (max-width: 800px) {
+    .numberSelect {
+      gap: 15px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 450px) {
+    p {
+      margin-bottom: 15px;
+    }
+  }
 `;
 
 const Box = styled.div`
@@ -65,6 +78,12 @@ const Box = styled.div`
   } */
   background-color: ${({ isSelected }) => (isSelected ? "black" : "white")};
   color: ${({ isSelected }) => (!isSelected ? "black" : "white")};
+
+  @media (max-width: 800px) {
+    height: 45px;
+    width: 45px;
+    font-size: 17px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -92,5 +111,27 @@ const Wrapper = styled.div`
       font-size: 20px;
       font-weight: 500;
     }
+  }
+
+  @media (max-width: 800px) {
+    width: 85%;
+    line-height: 0px;
+
+    .Score {
+      line-height: 40px;
+      h1 {
+        font-size: 60px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 30px auto;
   }
 `;

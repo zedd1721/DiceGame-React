@@ -4,9 +4,7 @@ import Rules from "./Rules";
 import { useState } from "react";
 
 function RollDice({ currentDice, randomNumber, setScore }) {
-  
-
-  const [toggle, settoggle] = useState(false)
+  const [toggle, settoggle] = useState(false);
   const handleResetScore = () => {
     setScore(0);
   };
@@ -30,10 +28,9 @@ function RollDice({ currentDice, randomNumber, setScore }) {
         </button>
         <button onClick={handleToggleRules} className="rules">
           {toggle ? "Hide" : "Show"} Rules
-          </button>
+        </button>
       </div>
       {toggle && <Rules />}
-      
     </Dicecontainer>
   );
 }
@@ -79,6 +76,17 @@ const Dicecontainer = styled.div`
     .rules {
       background-color: black;
       color: white;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .wrapper {
+      img {
+        height: 200px;
+      }
+      p {
+        font-size: 20px;
+      }
     }
   }
 `;
